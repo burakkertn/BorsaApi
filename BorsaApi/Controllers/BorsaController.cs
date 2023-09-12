@@ -44,9 +44,9 @@ namespace DovizKurApiUygulama.Controllers
             // Girilen değere göre başlangıç tarihini hesaplayın
             var startDate = DateTime.Now.Date.AddDays(-daysAgo).ToString("dd-MM-yyyy");
 
-        
-        // TCMB API'sine yapılacak isteğin URL'sini oluşturun
-        string url = $"https://evds2.tcmb.gov.tr/service/evds/series=TP.DK.USD.S.YTL-TP.DK.EUR.S.YTL-TP.DK.CHF.S.YTL-TP.DK.GBP.S.YTL-TP.DK.JPY.S.YTL&startDate={startDate}&endDate={endDate}&type=xml&key=Mgp1hyATqu";
+
+            // TCMB API'sine yapılacak isteğin URL'sini oluşturun
+            string url = $"https://evds2.tcmb.gov.tr/service/evds/series=TP.DK.USD.S.YTL-TP.DK.EUR.S.YTL-TP.DK.CHF.S.YTL-TP.DK.GBP.S.YTL-TP.DK.JPY.S.YTL&startDate={startDate}&endDate={endDate}&type=xml&key=Mgp1hyATqu";
 
             // API'den yanıt almak için HTTP GET isteği gönderin
             HttpResponseMessage response = await _httpClient.GetAsync(url);
@@ -154,7 +154,7 @@ namespace DovizKurApiUygulama.Controllers
         //--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
-        [HttpGet("İsviçreFrangı")]
+        [HttpGet("IsvicreFrangi")]
         public async Task<IActionResult> GetExchangeRates2([FromQuery] int daysAgo)
         {
             // Geçerli tarihi alın
@@ -211,7 +211,7 @@ namespace DovizKurApiUygulama.Controllers
         //--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
-        [HttpGet("İngilizSterlini")]
+        [HttpGet("IngilizSterlini")]
 
         public async Task<IActionResult> GetExchangeRates3([FromQuery] int daysAgo)
         {

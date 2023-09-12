@@ -7,7 +7,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace DovizKurApiUygulama
+namespace BorsaApi
 {
     public class Program
     {

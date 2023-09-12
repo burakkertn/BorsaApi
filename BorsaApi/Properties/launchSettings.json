@@ -8,7 +8,7 @@
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
-    "DovizKurApiUygulama": {
+    "BorsaApi": {
       "commandName": "Project",
       "launchBrowser": true,
       "launchUrl": "swagger",
