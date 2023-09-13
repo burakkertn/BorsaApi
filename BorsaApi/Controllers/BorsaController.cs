@@ -13,7 +13,7 @@ using System.Threading.Tasks;
 using System.Xml;
 using System.Xml.Linq;
 
-namespace DovizKurApiUygulama.Controllers
+namespace BorsaApi.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]

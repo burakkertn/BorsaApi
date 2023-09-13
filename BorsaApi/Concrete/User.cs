@@ -3,17 +3,21 @@ using MongoDB.Bson;
 
 namespace BorsaApi.Concrete
 {
-    public class gbp
+    public class User
     {
+        [BsonId]
         [BsonRepresentation(BsonType.ObjectId)]
         public string Id { get; set; }
 
-        [BsonElement("date")]
-        public string Date { get; set; }
+        [BsonElement("username")]
+        public string Username { get; set; }
 
-        [BsonElement("gbp")]
-        public double GBP { get; set; }
+        [BsonElement("password")]
+        public string Password { get; set; }
 
-    
+
+
+
+
     }
 }
