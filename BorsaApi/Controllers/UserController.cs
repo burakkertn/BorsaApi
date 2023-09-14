@@ -44,15 +44,7 @@ namespace BorsaApi.Controllers
 			return CreatedAtAction(nameof(Get), new { id = user.Id }, user);
 		}
 
-		[HttpPut("Update")]
-		public ActionResult Put(string id, [FromBody] User user)
-		{
-			var existingEssate = _userService.Get(id);
-			
-
-			_userService.Update(id, user);
-			return NoContent();
-		}
+		
 
 		[HttpDelete("Delete")]
 		public ActionResult Delete(string id)

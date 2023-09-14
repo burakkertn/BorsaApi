@@ -39,9 +39,6 @@ namespace BorsaApi.DataAccessLayer
                 _users.DeleteOne(user => user.Id == id);
             }
 
-            public void Update(string id, User user)
-            {
-                _users.ReplaceOne(user => user.Id == id, user);
-            }
+        
         }
     }

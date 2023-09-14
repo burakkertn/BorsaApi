@@ -9,7 +9,6 @@ namespace BorsaApi.DataAccessLayer
         User Get(string id);
       
         User Create(User user);
-        void Update(string id, User user);
         void Remove(string id);
     }
 }
